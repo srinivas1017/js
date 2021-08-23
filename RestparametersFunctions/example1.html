@@ -1,0 +1,18 @@
+<!--
+    Rest Parameters in functions
+    1. it is used to hold more than one value.
+    2. we will represent the rest parameter by using sperad operator
+    3. we must take only one rest parameter per function
+    4. rest parameter , position should be last
+
+-->
+<script>
+        function fun_one(...arg1) {
+            console.log(arg1)
+        }
+        fun_one("hello1")  // ["hello1"]
+        fun_one("hello1","hello2") // ["hello1","hello2"]
+        fun_one("hello1","hello2","hello3") // ["hello1","hello2","hello3"]
+        fun_one() // array[]
+
+</script>

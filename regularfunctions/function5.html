@@ -1,0 +1,6 @@
+<script>
+    function fun_one(a1,a2,a3) {
+        console.log(a1(),a2(),a3())
+    }
+    fun_one(function fun_two(){return "two"},function fun_three(){return "three"},function fun_four(){return "four"})
+</script>

@@ -1,0 +1,12 @@
+<script>
+    let outer = () => {
+        return () => {
+            return "hello"
+        }
+    }
+
+    console.log(outer)
+    console.log(outer())
+    console.log(outer()())
+    
+</script>

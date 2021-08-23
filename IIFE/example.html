@@ -1,0 +1,20 @@
+<!--
+    IIFE => immediate invokable functional expression
+    introduced in es9 version 
+    iife also called as sef invokable functions
+    ()();
+    (()=>{})();
+    syntax => ((arg1,arg2,arg3,....argn)=>{// business logic})(parram1,param2,param3.....paramN);
+    => no need to call thi sfunction
+-->
+
+<!--repeated interview question-->
+<script>
+    for(var i=0; i<5;i++){
+        ((i)=>{
+            setTimeout(()=>{
+                console.log(i)
+            },5000)
+        })(i)
+    }
+</script>

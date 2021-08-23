@@ -1,0 +1,10 @@
+<script>
+    function fun_one(){
+        return fun_two;
+    }
+
+    function fun_two(){
+        return "hello111";
+    }
+    console.log(fun_one()()) // funone output is funtwo, now if we keep another() it will call function two
+</script>
