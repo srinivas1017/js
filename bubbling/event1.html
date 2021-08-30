@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling</title>
+    <style>
+        #parent{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+            color:black;
+            text-align: left;
+        }
+
+        #child{
+            width:120px;
+            height:120px;
+            background-color: rgb(223, 136, 204);
+            color:black;
+            text-align: center;
+        }
+
+        #subchild{
+            width:80;
+            height:80;
+            background-color: rgb(138, 238, 108);
+            color:black;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id = "parent">
+        parent
+        <div id = "child">
+            child
+            <div id = "subchild">
+                subchild
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("parent").addEventListener("click",(event)=>{
+            console.log("parent")
+        })
+
+        document.getElementById("child").addEventListener("click",(event)=>{
+          
+            console.log("child")
+        })
+        
+        document.getElementById("subchild").addEventListener("click",(event)=>{
+          
+            console.log("subchild")
+        })
+    </script>
+</body>
+</html>
